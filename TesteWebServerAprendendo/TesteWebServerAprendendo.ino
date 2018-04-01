@@ -13,6 +13,7 @@ ESP8266WebServer server(80); // server: http://192.168.4.1
 
 void handleRoot2(){
   site = "<html lang=\"pt\"><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\"/>\r\n";
+  site += "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
   site += "<head><title>Hello World TCC ETECZL</title>\n";
   site += "<style>button{border:0;border-radius:0.3rem;background-color:#1fa3ec;color:#fff;line-height:2.4rem;font-size:1.2rem;width:100%;}</style></head>\n";
   site += "<body style=\"color: blue\">\n";
@@ -41,7 +42,7 @@ void handleRoot2(){
   site += "<tr style=\"height:20px\"><td><p class=\"legenda\">Dias</p></td><td><p class=\"legenda\">Horas</p></td><td><p class=\"legenda\">Min</p></td><td><p class=\"legenda\">Seg</p></td></tr></table>\n";
   site += "</table>\n";
   site += "</div>\n";
-  site += "<a href=\"inicio\"><button>Inicio</button></a>\n";
+  site += "<a href=\"inicio\"><button>Início</button></a>\n";
   site += "</body>\n";
   site += "</html>";
 
@@ -52,13 +53,14 @@ void handleRoot2(){
 
 void handleRoot(){
   site = "<html lang=\"pt\"><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\"/>\r\n";
+  site += "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
   site += "<head><title>Hello World</title>\n";
   site += "<style>button{border:0;border-radius:0.3rem;background-color:#1fa3ec;color:#fff;line-height:2.4rem;font-size:1.2rem;width:100%;}</style></head>\n";
   site += "<body style=\"color: blue\">\n";
   site += "<style>.c} button{border:0;border-radius:0.3rem;background-color:#1fa3ec;color:#fff;line-height:2.4rem;font-size:1.2rem;width:100%;}</style>";
   site += "<center><h1>Hello World do meu ESP8266</h1></center>\n";
-  site += "<center><h1>Agora Falando serio, quer tomar um susto, clique no botao abaixo:</h1></center>\n";
-  site += "<a href=\"TCC\"><button>Pagina TCC</button></a>\n";
+  site += "<center><h1>Agora Falando sério, quer tomar um susto? clique no botão abaixo:</h1></center>\n";
+  site += "<a href=\"TCC\"><button>Página TCC</button></a>\n";
   site += "</body>\n";
   site += "</html>";
 
